@@ -1,7 +1,7 @@
 #!/bin/bash
 
-USER_CONFIG_PATH="${HOME}/printer_data/config"
-MOONRAKER_CONFIG="${HOME}/printer_data/config/moonraker.conf"
+USER_CONFIG_PATH="${HOME}/B1_data/config"
+MOONRAKER_CONFIG="${HOME}/B1_data/config/moonraker.conf"
 KLIPPER_PATH="${HOME}/klipper"
 
 K_SHAKETUNE_PATH="${HOME}/klippain_shaketune"
@@ -22,12 +22,12 @@ function preflight_checks {
         exit -1
     fi
 
-    if [ "$(sudo systemctl list-units --full -all -t service --no-legend | grep -F 'klipper.service')" ]; then
-        printf "[PRE-CHECK] Klipper service found! Continuing...\n\n"
-    else
-        echo "[ERROR] Klipper service not found, please install Klipper first!"
-        exit -1
-    fi
+#    if [ "$(sudo systemctl list-units --full -all -t service --no-legend | grep -F 'klipper.service')" ]; then
+#       printf "[PRE-CHECK] Klipper service found! Continuing...\n\n"
+#    else
+#        echo "[ERROR] Klipper service not found, please install Klipper first!"
+#        exit -1
+#    fi
 
     install_package_requirements
 }
