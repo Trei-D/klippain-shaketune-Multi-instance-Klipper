@@ -32,12 +32,12 @@ function preflight_checks {
         exit -1
     fi
 
-    if [ "$(sudo systemctl list-units --full -all -t service --no-legend | grep -F 'klipper.service')" ]; then
-        printf "[PRE-CHECK] Klipper service found! Continuing...\n\n"
-    else
-        echo "[ERROR] Klipper service not found, Klippain is unlikely to be installed! Exiting..."
-        exit -1
-    fi
+#    if [ "$(sudo systemctl list-units --full -all -t service --no-legend | grep -F 'klipper.service')" ]; then
+#        printf "[PRE-CHECK] Klipper service found! Continuing...\n\n"
+#    else
+#        echo "[ERROR] Klipper service not found, Klippain is unlikely to be installed! Exiting..."
+#        exit -1
+#    fi
 
     local uninstall_klippain_answer
     if [ ! -f "${USER_CONFIG_PATH}/.VERSION" ]; then
