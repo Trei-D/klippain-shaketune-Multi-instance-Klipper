@@ -1,11 +1,11 @@
 #!/bin/bash
 
-USER_CONFIG_PATH="${HOME}/B1_data/config"
-MOONRAKER_CONFIG="${HOME}/B1_data/config/moonraker.conf"
+USER_CONFIG_PATH="${HOME}/E3Pro_data/config"
+MOONRAKER_CONFIG="${HOME}/E3Pro_data/config/moonraker.conf"
 KLIPPER_PATH="${HOME}/klipper"
 
-K_SHAKETUNE_PATH="${HOME}/B1_data/klippain_shaketune"
-K_SHAKETUNE_VENV_PATH="${HOME}/B1_data/klippain_shaketune-env"
+K_SHAKETUNE_PATH="${HOME}/E3Pro_data/klippain_shaketune"
+K_SHAKETUNE_VENV_PATH="${HOME}/E3Pro_data/klippain_shaketune-env"
 
 set -eu
 export LC_ALL=C
