@@ -8,7 +8,7 @@ I have moddified the installation script so it can be installed on a multiple kl
 
 What you have to do is to update the install.sh script with your desired printer path:
 ```bash
-USER_CONFIG_PATH="${HOME}/rinter_data/config"
+USER_CONFIG_PATH="${HOME}/printer_data/config"
 MOONRAKER_CONFIG="${HOME}/printer_data/config/moonraker.conf"
 KLIPPER_PATH="${HOME}/klipper"
 
