@@ -7,12 +7,12 @@ This Klippain "Shake&Tune" repository is a standalone module from the [Klippain]
 I have moddified the installation script so it can be installed on a multiple klippers instances.
 
 What you have to do is to update the install.sh script with your desired printer path:
-     ```bash
+```bash
 USER_CONFIG_PATH="${HOME}/E3Pro_data/config"
 MOONRAKER_CONFIG="${HOME}/E3Pro_data/config/moonraker.conf"
 KLIPPER_PATH="${HOME}/klipper"
 
 K_SHAKETUNE_PATH="${HOME}/E3Pro_data/klippain_shaketune"
 K_SHAKETUNE_VENV_PATH="${HOME}/E3Pro_data/klippain_shaketune-env"
-    ```
+```
 
